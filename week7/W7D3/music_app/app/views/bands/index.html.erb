@@ -1,0 +1,9 @@
+<h1>Bands Index Page</h1>
+
+<% @bands.each do |band| %>
+    <li><a href="<%= band_url(band) %>">
+    <p><%= Band Name %></a></p>
+    </li>
+<% end %>
+
+<input type="hidden" name="authenticity_token" value="<%= form_authentictiy_token %>">
