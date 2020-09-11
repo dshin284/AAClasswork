@@ -1,0 +1,8 @@
+<h1>Sign Up For Our App</h1>
+
+<form action="<%= users_url %>" method="post">
+    <input type="hidden" name="authenticity_token" value= "<%= form_authenticity_token %>">
+    <label for="username">Username<input type="text"id="username" name="user[username]"></label>
+    <label for="password">Password<input type="text"id="password" name="user[password]"></label>
+    <input type="submit" value="Sign Up">
+</form>
